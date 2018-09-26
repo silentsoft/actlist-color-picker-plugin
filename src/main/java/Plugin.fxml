@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane layoutY="10.0" style="-fx-border-color: darkgray; -fx-border-width: 1;">
+         <children>
+            <ImageView fx:id="screenView" fitHeight="108.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane maxHeight="10.0" maxWidth="10.0" minHeight="10.0" minWidth="10.0" prefHeight="10.0" prefWidth="10.0" style="-fx-border-color: white, black; -fx-border-width: 1 1 1 1, 1 1 1 1; -fx-border-insets: 0 0 0 0, 1 1 1 1; -fx-background-color: transparent;" />
+         </children>
+      </StackPane>
+      <ColorPicker fx:id="colorPicker" layoutX="114.0" layoutY="14.0" prefHeight="24.0" prefWidth="122.0" />
+      <GridPane layoutX="114.0" layoutY="45.0" prefHeight="47.0" prefWidth="122.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="R : " />
+            <Label text="G : " GridPane.rowIndex="1" />
+            <Label text="B : " GridPane.rowIndex="2" />
+            <Label fx:id="redValue" text="255" GridPane.columnIndex="1" />
+            <Label fx:id="greenValue" text="255" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="blueValue" text="255" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
