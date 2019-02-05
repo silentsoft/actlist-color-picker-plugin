@@ -32,7 +32,7 @@ public class Plugin extends ActlistPlugin {
 	private Thread liveCaptureThread;
 	
 	public static void main(String[] args) throws Exception {
-		//debug();
+		debug();
 	}
 	
 	public Plugin() throws Exception {
