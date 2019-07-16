@@ -39,7 +39,7 @@ public class Plugin extends ActlistPlugin {
 		super("Color Picker");
 		
 		setPluginVersion("1.0.0");
-		setPluginAuthor("silentsoft.org", URI.create("https://github.com/silentsoft/actlist-plugin-color-picker"));
+		setPluginAuthor("silentsoft.org", URI.create("https://github.com/silentsoft/actlist-color-picker-plugin"));
 		setPluginUpdateCheckURI(URI.create("http://actlist.silentsoft.org/api/plugin/3df4bbf7/update/check"));
 		
 		setMinimumCompatibleVersion(1, 2, 6);
